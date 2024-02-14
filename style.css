@@ -8,7 +8,7 @@
 }
 /* navbar */
 .navbar a {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 500;
 }
 .navbar-toggler {
@@ -19,7 +19,7 @@
 }
 /* Hero */
 .w-100-height {
-    height: 90vh;
+    height: 100vh;
     width: 100%;
 }
 .carousel-item {
@@ -29,7 +29,7 @@
     object-fit:cover;
 }
 .carousel-caption {
-    text-align: left;
+    text-align: center;
     margin-bottom: 200px;
     z-index: 2;
 }
@@ -39,18 +39,15 @@
     letter-spacing: 1px;
     font-weight: 500;
     line-height: 60px;
-    text-align: left;
+    text-align: center;
 }
 .carousel-caption p {
-    width: 60%;
+    width: 100%;
     font-size: 16px;
     line-height: 1.9;
-    text-align: left;
+    text-align: center;
 }
-.carousel-item .carousel-caption input {
-    padding: 0.73rem 1rem;
-}
-.carousel-inner:before {
+.carousel-inner::before {
     content: "";
     position: absolute;
     width: 100%;
@@ -59,4 +56,19 @@
     left: 0;
     background: rgba(0, 0, 0, 0.6);
     z-index: 1;
+}
+@media only screen and (max-width: 767px){
+    .navbar-nav {
+        text-align: center;
+    }
+    .carousel-caption h5 {
+        font-size: 30px;
+        letter-spacing: 0;
+        line-height: normal;
+    }
+    .carousel-caption p {
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+
 }
