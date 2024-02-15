@@ -72,3 +72,17 @@
     }
 
 }
+/* Our Projects */
+.arrow-icon {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+/* Services */
+.section-padding {
+    padding: 100px 0;
+}
+i {
+    font-size: 30px;
+    margin-bottom: 5%;
+}
